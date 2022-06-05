@@ -1,11 +1,11 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="utf-8">
 		<meta name="author" content="Wellson Huang">
 		<link rel="stylesheet" href="mystyle.css">
 		<title>My CV</title>
-		<script>alert(“此為官方網站”)</script>
+		<script>alert('This is private information')</script>
 
 	</head>
 	<body>
@@ -16,92 +16,76 @@
 
 		?>
 		<br>
-		<!--2.<hr> 標籤呈現 horizontal rule 並加上特效-->
-		<!--<hr> 特效參考：https://blog.csdn.net/u011641865/article/details/28871283-->
 		<hr style="border:5px double #F00" width="80%" color=“blue” size=“10”>
-			
 		
-		<!--1.有使用到 <table> 標籤配置有多個行列欄位的表格-->
+
+		<div>
+			<ol>
+			<li>姓名 ：Wellson</li>
+			<li>生日 ：1999/9/5</li>
+			<li>地址 ：新北市板橋區</li>
+			<li>TEL  ：0976-823452</li>
+			<li>Email ：wwww@gmail.com</li>
+			
+			</ol>
+		</div>
+	
+		<div>
+		學歷背景
+		<hr>
 		<table border=“1”>
 			<caption></caption>
-			<colgroup>
-				<col style=background-color:yellow>
-			</colgroup>
 			
 			<thead>
 				<tr>
-					<th>照片</th>
-					<th>名稱</th>
-					<th>介紹</th>
-					<th>拍攝地點</th>
+					<th>時間</th>
+					<th>學校圖片</th>
+					<th>學校</th>
 				</tr>		
 			</thead>
 
 			<tbody>
 				<tr>
-					<!--2.有使用到 <img> 標籤插入附件中四張圖片、加入替代文字、調整長/寬設定以符合版面配置-->
-					<td><img src="picture/a1.jpg" alt="瞇瞇眼 (麻六甲聖保羅山拍攝)" width="250" height="250"></td>
-					<td>瞇瞇眼</td>
-					<td>看起來就像剛睡醒一樣，眼睛瞇瞇的很可愛</td>
-					<td>麻六甲聖保羅山拍攝</td>	
+					<td>201709~202006</td>
+					<td><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.aNaImS0-iQMuNftsCfjJcgHaEK%26pid%3DApi&f=1" alt="國立中央大學" width="250" height="250"></td>
+					<td>國立中央大學</td>	
 
 				</tr>
 
 				<tr>
-					<!--2.有使用到 <img> 標籤插入附件中四張圖片、加入替代文字、調整長/寬設定以符合版面配置-->
-					<td><img src="picture/a2.jpg" alt="大胖橘 (猴硐貓村拍攝)" width="250" height="250"></td>
-					<td>大胖橘</td>
-					<td>顧名思義，是身上的斑紋是他的特色</td>
-					<td>猴硐貓村拍攝</td>	
+					<td>202009~</td>
+					<td><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.AbYiX6KATohzO7TvYG6lDwHaE-%26pid%3DApi&f=1" alt="台北市私立薇閣高級中學" width="250" height="250"></td>
+					<td>台北市私立薇閣高級中學</td>	
 				</tr>
-
-
-				<tr>
-					<!--2.有使用到 <img> 標籤插入附件中四張圖片、加入替代文字、調整長/寬設定以符合版面配置-->
-					<td><img src="picture/a3.jpg" alt="圓滾滾 (哈爾濱東正教堂拍攝)" width="250" height="250"></td>
-					<td>圓滾滾</td>
-					<td>毛茸茸的身體，讓人看了很想抱</td>
-					<td>哈爾濱東正教堂拍攝</td>	
-
-				</tr>
-
-				<tr>
-
-					<!--2.有使用到 <img> 標籤插入附件中四張圖片、加入替代文字、調整長/寬設定以符合版面配置-->
-					<td><img src="picture/a4.jpg" alt="小釘鐺 (桃園某火鍋店拍攝)" width="250" height="250"></td>
-					<td>小釘鐺</td>
-					<td>充滿智慧的貓貓</td>
-					<td>桃園某火鍋店拍攝</td>	
-
-				</tr>
-
-
 
 			</tbody>
 		
+		</div>
+		
+
 
 		
-			<h4>contact me</h4>
-			<!--3.<ol> 標籤呈現 ordered list 的效果-->
+
+		<div>	
+			<p>小學是文化國小!</p>			
+		</div>
+	
+
+
+
+		<div>
+		<h4>contact me</h4>
 			<ol>
-				<!--8.至少有四個超鏈結、未點選/點選過時會有不同顏色、點選後會讓使用者瀏覽器另開新分頁 -->
 				<li><a href="hhttps://www.facebook.com/wellsonhuang" target="＿blank">FB</a></li>
 				<li><a href="https://www.instagram.com/wei_chen.0623/">IG</a></li>
 			</ol>
-
-		<h3>fun fact</h3>
-
-		<div>	
-			<!--7. 滑鼠指標移到網頁特定位置會有 hover 所觸發的特效出現 -->
-
-			<p>貓貓魔術區1</p>
-			<!--9. 額外選擇任兩種特效的語法放置於 mystyle.css 檔案中、使用 <link> 標籤讓 CSS 發揮效用-->
-			<section><p>貓貓魔術區2</p></section>
-
-
 		</div>
 		
-			<p>貓貓魔術區3</p>
+		<div class ="footer">
+			<a href="#" onclick="open('https://github.com/wellsonhuang','Other project',config ='height=200,width=200');">更多關於我的內容</a>
+			
+		</div>
+		
 		
 	</body>
 </html>
