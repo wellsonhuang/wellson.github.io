@@ -5,10 +5,10 @@
 		<meta name="author" content="Wellson Huang">
 		<link rel="stylesheet" href="mystyle.css">
 		<title>My CV</title>
-		<script>alert('This is private information')</script>
 
 	</head>
 	<body>
+		<script>alert('This is private information')</script>
 		<h1>About me</h>
 		<br>
 		<hr color="gray" size="5"/>
@@ -80,15 +80,18 @@
 		<div>
 		<h4>contact me</h4>
 			<ol>
+				<!--設置四種不同的顏色配置，超連結未點選實為綠色，點選後變紅色，滑鼠移到超連結文字時變黃色，滑鼠按下超連結文字時變藍色-->
 				<li><a href="hhttps://www.facebook.com/wellsonhuang" target="＿blank">FB</a></li>
+
 				<li><a href="https://www.instagram.com/wei_chen.0623/">IG</a></li>
 			</ol>
 		</div>
 		
-		<div class ="footer">
-		<!-讓這個div的內容會出現在網頁最下面-->
-		<!--設置四種不同的顏色配置，超連結未點選實為綠色，點選後變紅色，滑鼠移到超連結文字時變黃色，滑鼠按下超連結文字時變藍色-->
+		<div class ="footer1">
+		<!-class="footer"讓這個div的內容會出現在網頁最下面-->
+		<!--設置四種不同的顏色配置，超連結未點選時為綠色，點選後變紅色，滑鼠移到超連結文字時變黃色，滑鼠按下超連結文字時變藍色-->
 			<a href="#" onclick="open('https://github.com/wellsonhuang','Other project',config ='height=200,width=200');">更多關於我的內容</a>
+			<button onclick="print()">列印此CV</button>
 			<span style="border-bottom:1px solid black; color:blue" >感謝蒞臨</span>
 			
 		</div>
