@@ -1,35 +1,20 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
-    margin: 0;
-    padding: 0;
+
+div:hover {
+background:#EA7500;
+display:block;
+
 }
-header {
-    background-color: #333333;
-    padding: 20px;
-    color: #ffffff;
-    text-align: center;
+
+div + p{
+text-align:center;
+background:red;
+color :white;
 }
-.cat-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
+
+
+div > p{
+text-align:center;
+background:blue;
+color: yellow
 }
-.cat-card {
-    max-width: 300px;
-    border: 1px solid #dddddd;
-    border-radius: 5px;
-    overflow: hidden;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-.cat-image {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
-.cat-info {
-    padding: 10px;
-    background-color: #ffffff;
-}
+
