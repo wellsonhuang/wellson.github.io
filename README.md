@@ -1,5 +1,5 @@
-# Visit my [homepage](https://wellsonhuang.github.io/wellsonhuang.github.io/).
+# Visit my [homepage](https://wellsonhuang.github.io/wellsonhuang.github.io/index.html).
 
-![This is a alt text.](https://gifimage.net/wp-content/uploads/2017/11/gif-tierno-11.gif)
+![This is alt text.](https://gifimage.net/wp-content/uploads/2017/11/gif-tierno-11.gif)
 
-Thank you for visiting my github! Have a nice day 
+Thank you for visiting my GitHub! Have a nice day.
