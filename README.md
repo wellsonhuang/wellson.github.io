@@ -1,4 +1,4 @@
-# Visit my [homepage](https://wellsonhuang.github.io/wellsonhuang.github.io/index.html).
+# Visit my [page](https://wellsonhuang.github.io/wellsonhuang.github.io/index.html).
 
 ![This is alt text.](https://gifimage.net/wp-content/uploads/2017/11/gif-tierno-11.gif)
 
