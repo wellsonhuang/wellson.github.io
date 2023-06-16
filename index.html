@@ -7,37 +7,45 @@
 	<script>alert("此為官方網站");</script>
 	<script>
 		function displayMessage(message) {
-		  alert(message);
+			alert(message);
 		}
 
 		var catImage = document.querySelector("#cat-image");
 		catImage.addEventListener("click", function() {
-		  displayMessage("您點擊了貓咪圖片！");
+			displayMessage("您點擊了貓咪圖片！");
 		});
 
 		var tableRows = document.querySelectorAll("table tbody tr");
 		tableRows.forEach(function(row) {
-		  row.addEventListener("mouseover", function() {
-		    row.classList.add("highlight");
-		  });
-		  row.addEventListener("mouseout", function() {
-		    row.classList.remove("highlight");
-		  });
+			row.addEventListener("mouseover", function() {
+				row.classList.add("highlight");
+			});
+			row.addEventListener("mouseout", function() {
+				row.classList.remove("highlight");
+			});
 		});
 
 		function showCatDescription(catName, description) {
-		  alert("貓咪名稱：" + catName + "\n\n介紹：" + description);
+			alert("貓咪名稱：" + catName + "\n\n介紹：" + description);
 		}
 
 		var catRows = document.querySelectorAll("table tbody tr");
 		catRows.forEach(function(row) {
-		  var catName = row.querySelector("td:nth-child(2)").textContent;
-		  var catDescription = row.querySelector("td:nth-child(3)").textContent;
-		  
-		  row.addEventListener("click", function() {
-		    showCatDescription(catName, catDescription);
-		  });
+			var catName = row.querySelector("td:nth-child(2)").textContent;
+			var catDescription = row.querySelector("td:nth-child(3)").textContent;
+
+			row.addEventListener("click", function() {
+				showCatDescription(catName, catDescription);
+			});
 		});
+
+		function rateCat(catName) {
+			var rating = prompt("請給" + catName + "評分（1-5）：");
+			if (rating) {
+				var ratingResult = "您給" + catName + "的評分是：" + rating;
+				alert(ratingResult);
+			}
+		}
 	</script>
 </head>
 <body>
@@ -57,6 +65,7 @@
 		<th>名稱</th>
 		<th>介紹</th>
 		<th>拍攝地點</th>
+		<th>評分</th>
 	</tr>
 	</thead>
 
@@ -67,34 +76,38 @@
 		<td>瞇瞇眼</td>
 		<td>看起來就像剛睡醒一樣，眼睛瞇瞇的很可愛</td>
 		<td>麻六甲聖保羅山拍攝</td>
+		<td><button onclick="rateCat('瞇瞇眼')">評分</button></td>
 
 	</tr>
 
 	<tr>
 
-		<td><img src="a2.jpg" alt="大胖橘 (猴硐貓村拍攝)" width="250" height="250"></td>
+		<td><img id="cat-image" src="a2.jpg" alt="大胖橘 (猴硐貓村拍攝)" width="250" height="250"></td>
 		<td>大胖橘</td>
 		<td>顧名思義，是身上的斑紋是他的特色</td>
 		<td>猴硐貓村拍攝</td>
+		<td><button onclick="rateCat('大胖橘')">評分</button></td>
 	</tr>
 
 
 	<tr>
 
-		<td><img src="a3.jpg" alt="圓滾滾 (哈爾濱東正教堂拍攝)" width="250" height="250"></td>
+		<td><img id="cat-image" src="a3.jpg" alt="圓滾滾 (哈爾濱東正教堂拍攝)" width="250" height="250"></td>
 		<td>圓滾滾</td>
 		<td>毛茸茸的身體，讓人看了很想抱</td>
 		<td>哈爾濱東正教堂拍攝</td>
+		<td><button onclick="rateCat('圓滾滾')">評分</button></td>
 
 	</tr>
 
 	<tr>
 
 
-		<td><img src="a4.jpg" alt="小釘鐺 (桃園某火鍋店拍攝)" width="250" height="250"></td>
+		<td><img id="cat-image" src="a4.jpg" alt="小釘鐺 (桃園某火鍋店拍攝)" width="250" height="250"></td>
 		<td>小釘鐺</td>
 		<td>充滿智慧的貓貓</td>
 		<td>桃園某火鍋店拍攝</td>
+		<td><button onclick="rateCat('小釘鐺')">評分</button></td>
 
 	</tr>
 
@@ -125,4 +138,3 @@
 <script src="script.js"></script> <!-- External JavaScript file -->
 </body>
 </html>
-
