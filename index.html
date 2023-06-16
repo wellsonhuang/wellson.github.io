@@ -5,7 +5,40 @@
 	<link rel="stylesheet" href="mystyle.css">
 	<title>貓咪介紹網站</title>
 	<script>alert("此為官方網站");</script>
+	<script>
+		function displayMessage(message) {
+		  alert(message);
+		}
 
+		var catImage = document.querySelector("#cat-image");
+		catImage.addEventListener("click", function() {
+		  displayMessage("您點擊了貓咪圖片！");
+		});
+
+		var tableRows = document.querySelectorAll("table tbody tr");
+		tableRows.forEach(function(row) {
+		  row.addEventListener("mouseover", function() {
+		    row.classList.add("highlight");
+		  });
+		  row.addEventListener("mouseout", function() {
+		    row.classList.remove("highlight");
+		  });
+		});
+
+		function showCatDescription(catName, description) {
+		  alert("貓咪名稱：" + catName + "\n\n介紹：" + description);
+		}
+
+		var catRows = document.querySelectorAll("table tbody tr");
+		catRows.forEach(function(row) {
+		  var catName = row.querySelector("td:nth-child(2)").textContent;
+		  var catDescription = row.querySelector("td:nth-child(3)").textContent;
+		  
+		  row.addEventListener("click", function() {
+		    showCatDescription(catName, catDescription);
+		  });
+		});
+	</script>
 </head>
 <body>
 
@@ -30,7 +63,7 @@
 	<tbody>
 	<tr>
 
-		<td><img src="a1.jpg" alt="瞇瞇眼 (麻六甲聖保羅山拍攝)" width="250" height="250"></td>
+		<td><img id="cat-image" src="a1.jpg" alt="瞇瞇眼 (麻六甲聖保羅山拍攝)" width="250" height="250"></td>
 		<td>瞇瞇眼</td>
 		<td>看起來就像剛睡醒一樣，眼睛瞇瞇的很可愛</td>
 		<td>麻六甲聖保羅山拍攝</td>
